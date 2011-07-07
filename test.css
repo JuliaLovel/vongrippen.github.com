@@ -1,0 +1,174 @@
+html, body {
+	font-family: 'Josefin Sans', arial, serif;
+	color: white;
+		background-color: black;
+}
+
+@-moz-document url-prefix() {
+}
+
+#containment {
+	position: relative;
+}
+
+#left {
+	width: 80%;
+	margin-right: -5px;
+	height:100%;
+	display: inline-block;
+	text-align: right;
+	position: relative;
+	font-size: 40px;
+	color: #6c9d37;
+}
+
+@-moz-document url-prefix() {
+	#left {
+		width: 80%;
+		margin-right: -5px;
+		height:100%;
+		display: inline-block;
+		text-align: right;
+		position: relative;
+		font-size: 40px;
+		color: #6c9d37;
+	}
+	
+	#right {
+		color: #939595;
+		width: 20%;
+		height: 100%;
+		display: inline;
+	}
+}
+
+#right {
+	color: #939595;
+	width: 20%;
+	height: 100%;
+	display: inline;
+	padding-right: 1px;
+}
+
+#footer {
+	position: relative;
+	height: 75px;
+	clear: both;
+	margin-bottom: -75px;
+}
+
+#footer #left {
+	position: absolute;
+	text-align: right;
+	font-size: 100px;
+	display: inline-block;
+	bottom: 120px;
+}
+
+@-moz-document url-prefix() {
+    #footer #left {
+		position: absolute;
+		text-align: right;
+		font-size: 100px;
+		display: inline-block;
+		bottom: 130px;
+	}
+}
+
+#footer #right {
+	position: absolute;
+	text-align: left;
+	font-size: 50px;
+	display: inline-block;
+	bottom: 50px;
+	left: 80%;
+}
+
+#right a {
+	color: #939595;
+	text-decoration: none;
+}
+
+#right a:hover {
+	color: #d6dee0;
+}
+
+#color-block {
+	position: relative;
+	bottom: 45px;
+	height: 50px;
+	clear:both;
+	z-index: 10;
+} 
+
+#color-block #left{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	background-color: #6c9d37;
+	display: inline-block;
+}
+
+#color-block #right{
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	background-color: #939595;
+	display: inline-block;
+}
+
+/*Opera Fix*/
+body:before {
+	content:"";
+	height:100%;
+	float:left;
+	width:0;
+	margin-top:-32767px;/
+}
+
+.smaller {
+	font-size: 30px;
+}
+
+.rotate {
+display: block;
+
+/* Opera */
+-o-transform: rotate(-90deg);
+-o-transform-origin: left top;
+
+/* Safari */
+-webkit-transform: rotate(-90deg);
+-webkit-transform-origin: left top;
+
+/* Firefox */
+-moz-transform: rotate(-90deg);
+-moz-transform-origin: left top;
+
+/* Internet Explorer */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+}
+
+ul {
+	list-style-type: none;
+}
+
+#left ul {
+	color: #890650;
+}
+
+#left ul a {
+	color: #890650;
+	text-decoration: none;
+}
+
+#left ul a:hover {
+	color: #eb0b8a;
+}
+
+.bottom {
+	position: absolute;
+	bottom: 150px;;
+	right: 15px;
+}
