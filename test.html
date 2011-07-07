@@ -1,0 +1,149 @@
+<html>
+	<head>
+		<title>Test Page</title>
+		<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:bold&v1' rel='stylesheet' type='text/css'>
+		<style media="screen" type="text/css">
+		html, body {
+			font-family: 'Josefin Sans', arial, serif;
+			color: white;
+				background-color: black;
+		}
+		
+		#left {
+			width: 80%;
+			margin-right: -5px;
+			height:100%;
+			display: inline-block;
+			text-align: right;
+			position: relative;
+			font-size: 40px;
+			color: #6c9d37;
+		}
+		
+		#right {
+			color: #939595;
+			width: 20%;
+			padding-right: 1px;
+			height: 100%;
+			display: inline;
+		}
+		
+		#footer {
+			position: relative;
+			margin-top: -125px;
+			height: 75px;
+			clear: both;
+			padding-bottom: 50px;
+		}
+
+		#footer #left {
+			text-align: right;
+			font-size: 100px;
+			display: inline-block;
+		}
+		
+		#footer #right {
+			text-align: left;
+			font-size: 50px;
+			display: inline-block;
+		}
+		
+		#right a {
+			color: #939595;
+			text-decoration: none;
+		}
+		
+		#right a:hover {
+			color: #d6dee0;
+		}
+
+		#color-block {position: relative;
+			margin-top: -50px; /* negative value of footer height */
+			height: 50px;
+			clear:both;} 
+		
+		#color-block #left{
+			background-color: #6c9d37;
+			display: inline-block;
+		}
+		
+		#color-block #right{
+			background-color: #939595;
+			display: inline-block;
+		}
+
+		/*Opera Fix*/
+		body:before {
+			content:"";
+			height:100%;
+			float:left;
+			width:0;
+			margin-top:-32767px;/
+		}
+		
+		.smaller {
+			font-size: 30px;
+		}
+		
+		.rotate {
+		display: block;
+		
+		/* Opera */
+		-o-transform: rotate(-90deg);
+		-o-transform-origin: left top;
+
+		/* Safari */
+		-webkit-transform: rotate(-90deg);
+		-webkit-transform-origin: left top;
+
+		/* Firefox */
+		-moz-transform: rotate(-90deg);
+		-moz-transform-origin: left top;
+
+		/* Internet Explorer */
+		filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+		}
+		
+		ul {
+			list-style-type: none;
+		}
+		
+		.bottom {
+			position: absolute;
+			bottom: 150px;;
+			right: 15px;
+		}
+		</style>
+	</head>
+	<body>
+		<div id="wrap">
+			<div id="left">
+				<div class="bottom">
+					<ul>
+						<li>Menu 1&nbsp;</li>
+						<li>Menu 2</li>
+						<li>Menu 3</li>
+						<li>Menu 4</li>
+					</ul>
+				</div>
+			</div>
+			<div id="right"></div>
+		</div>
+		<div id="footer">
+			<div id="left">Michael Cochran</div>
+			<div id="right">
+				<span class="rotate">
+				<a href="mailto:mcochran@linux.com">mcochran@linux.com</a><br />
+				<span class="smaller"><a href="http://github.com/vongrippen">github.com/vongrippen</a> <br />
+				<a href="http://twitter.com/vongrippen">@vongrippen</a> <br />
+				<a href="tel:+1-901-289-3855">901.289.3855</a>
+				</span></span>
+			</div>
+		</div>
+		<div id="color-block">
+			<div id="left"></div>
+			<div id="right"></div>
+		</div>
+	</body>
+</html>
