@@ -4,9 +4,6 @@ html, body {
 		background-color: black;
 }
 
-@-moz-document url-prefix() {
-}
-
 #containment {
 	position: relative;
 }
@@ -20,26 +17,6 @@ html, body {
 	position: relative;
 	font-size: 40px;
 	color: #6c9d37;
-}
-
-@-moz-document url-prefix() {
-	#left {
-		width: 80%;
-		margin-right: -5px;
-		height:100%;
-		display: inline-block;
-		text-align: right;
-		position: relative;
-		font-size: 40px;
-		color: #6c9d37;
-	}
-	
-	#right {
-		color: #939595;
-		width: 20%;
-		height: 100%;
-		display: inline;
-	}
 }
 
 #right {
@@ -63,16 +40,6 @@ html, body {
 	font-size: 100px;
 	display: inline-block;
 	bottom: 120px;
-}
-
-@-moz-document url-prefix() {
-    #footer #left {
-		position: absolute;
-		text-align: right;
-		font-size: 100px;
-		display: inline-block;
-		bottom: 130px;
-	}
 }
 
 #footer #right {
@@ -167,8 +134,8 @@ ul {
 	color: #eb0b8a;
 }
 
-.bottom {
+#menu {
 	position: absolute;
-	bottom: 150px;;
+	bottom: 150px;
 	right: 15px;
 }
