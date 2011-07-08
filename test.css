@@ -1,11 +1,7 @@
 html, body {
 	font-family: 'Josefin Sans', arial, serif;
 	color: white;
-		background-color: black;
-}
-
-#containment {
-	position: relative;
+	background-color: black;
 }
 
 #left {
@@ -32,6 +28,7 @@ html, body {
 	height: 75px;
 	clear: both;
 	margin-bottom: -75px;
+	padding-bottom: -75px;
 }
 
 #footer #left {
